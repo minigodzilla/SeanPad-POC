@@ -1,0 +1,69 @@
+/* Empty. Add your own CSS if you like */
+
+.scroll{
+	height: 100% !important;
+	display: -webkit-box !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: -webkit-flex !important;
+	display: flex !important;
+	-webkit-box-direction: normal !important;
+	-moz-box-direction: normal !important;
+	-webkit-box-orient: vertical !important;
+	-moz-box-orient: vertical !important;
+	-webkit-flex-direction: column !important;
+	-ms-flex-direction: column !important;
+	flex-direction: column !important;
+}
+
+.row{
+	-webkit-box-flex: 0 !important;
+	-moz-box-flex: 0 !important;
+	-webkit-flex: 0 1 50% !important;
+	-ms-flex: 0 1 50% !important;
+	flex: 0 1 50% !important;
+}
+
+.col {
+	display: flex;
+}
+
+
+.button-pad {
+	margin: 0 !important;
+	padding: 0;
+	position: relative;
+}
+
+	.button-pad .button-content {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		bottom: 5px;
+		left: 5px;
+	}
+
+		.button-icon,
+		.button-title {
+			position: absolute;
+			width: 100%;
+		}
+
+		.button-icon {
+			top: 0;
+			height: 75%;
+		}
+
+			.button-icon img {
+				position: absolute;
+				max-height: 90%;
+				max-width: 90%;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+
+		.button-title {
+			bottom: 0;
+			height: 25%;
+		}

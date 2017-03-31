@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/sound.controller.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">SeanPad POC</h1>
+          <div class="buttons">
+            <button class="button icon ion-gear-a"></button>
+          </div>
+        </ion-header-bar>
+      <ion-content ng-controller="SoundController as vm">
+
+        <div class="row">
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('cat')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/cat.jpg"/>
+                </div>
+                <div class="button-title">Cat</div>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('dog')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/dog.jpg"/>
+                </div>
+                <div class="button-title">Dog</div>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('horse')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/horse.jpg"/>
+                </div>
+                <div class="button-title">Horse</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('bear')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/bear.jpg"/>
+                </div>
+                <div class="button-title">Bear</div>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('duck')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/duck.jpg"/>
+                </div>
+                <div class="button-title">Duck</div>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('cow')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/cow.jpg"/>
+                </div>
+                <div class="button-title">Cow</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('pig')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/pig.jpg"/>
+                </div>
+                <div class="button-title">Pig</div>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('chimp')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/chimp.jpg"/>
+                </div>
+                <div class="button-title">Chimp</div>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="button ion-button button-block button-pad" ng-click="vm.play('bird')">
+              <div class="button-content">
+                <div class="button-icon">
+                  <img src="img/bird.jpg"/>
+                </div>
+                <div class="button-title">Bird</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
